@@ -1,0 +1,42 @@
+<h1>AGENDA</h1>
+
+<head>
+<ul>
+  <% for(var i=0;i<personas.length;i++) { %>
+    <li>
+      Nombre: <%= personas[i][0] %> | Apellido: <%= personas[i][1] %> | Mail: <%= personas[i][2] %> | Telefono:  <%= personas[i][3] %>
+    </li>
+      
+  <% } %>
+</ul>
+
+<form action="/guardar" method="get">
+  Nombre: <input type="text" name="nombre"/><br>
+  Apellido: <input type="text" name="apellido"/><br>
+  Correo: <input type="text" name="correo"/><br>
+  Telefono: <input type="text" name="telefono"/><br>
+
+  <input type="submit" value="Guardar"/>
+</form>
+
+<form action="/Editar" method="get">
+  Nombre: <input type="text" name="nombre"/><br>
+  Apellido: <input type="text" name="apellido"/><br>
+  Correo: <input type="text" name="correo"/><br>
+  Telefono: <input type="text" name="telefono"/><br>
+
+  <input type="submit" value="Editar"/>
+</form>
+
+<form action="/eliminar" method="get">
+  Nombre: <input type="text" name="nombre"/><br>
+  Apellido: <input type="text" name="apellido"/><br>
+  Correo: <input type="text" name="correo"/><br>
+  Telefono: <input type="text" name="telefono"/><br>
+ 
+  <input type="submit" value="eliminar"/>
+</form>
+<embed src="so.wav" autostart=true true loop=true width="1" height="1"> 
+
+<link rel="stylesheet" type="text/css" href="fondo.css">
+</head>
